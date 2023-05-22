@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import { Box } from "@chakra-ui/react";
+import Header from "./components/Header";
+import Editor from "./components/Editor";
+import Sidebar from "./components/Sidebar";
+import Toolbar from "./components/Toolbar";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+
+      <Box display={"grid"} gridTemplateColumns={"95% 5%"}>
+        <Box>
+          <Toolbar />
+          <Editor />
+        </Box>
+        <Box>
+          <Sidebar />
+        </Box>
+      </Box>
     </div>
   );
 }
