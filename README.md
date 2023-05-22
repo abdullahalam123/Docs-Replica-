@@ -33,7 +33,7 @@ Introducing a replica of Google Docs user interface. This creation was developed
 - **Tech Stack**
 This project is developed using React, and Chakra UI. React allows for efficient component-based development, while Chakra UI simplifies the styling and design process with its ready-to-use components and theming capabilities.
 
-- **Steps to Run it locally**
+- **Steps to Run it locally**:
  *Clone the repository*:
 
    ```shell
