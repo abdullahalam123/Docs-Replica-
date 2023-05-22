@@ -1,70 +1,56 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Google Docs Replica
 
-## Available Scripts
+Introducing a replica of Google Docs user interface. This creation was developed as part of the Front End Assessment for Mercor. It has a familiar and intuitive user experience, designed to mirror the renowned Google Docs interface.
 
-In the project directory, you can run:
 
-### `npm start`
+## Features
+- **Text Editor**: A simple text editor that enables the user to write, copy, and delete content effortlessly. Also supports Grammarly out of the box. The text editor features a white background for easy readability, set against a subtle gray backdrop.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Sidebar**: A convenient with quick access to other Google apps to switch between them effortlessly
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Toolbar**: A toolbar component that allows the user to edit the document name, which gets reflected on the browser tab. A variety of familiar commans like Undo, Redo, Text Style, Font Size, Bold, Italics to name a few and the option to share the document.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Components
+- **app.js**: The App.js file in React is the main component where the application logic and structure are defined.
+- **index.js**: The index.js file in React is the entry point for rendering the application.
+- **index.css**: It contains styles specific to the index.html file.
+- **Public Folder:** It contains static assets, such as HTML, CSS, images, and other files.
+    - *index.html*: The React code is injected here.
+    - *images folder*: Contains static images .
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **src folder:** The source code files are stored here. It contains JavaScript files, stylesheets, and other assets that are used to build and run the application.
+    - **assets folder**: It contains the logos for the Google Applications in the Sidebar.
+    - **Components Folder**: Stores the reusable UI elements.
+        - *Editor.jsx*: It is the main editing screen component that provides the primary interface for users to edit and manipulate the content.
+        - *Header.jsx*:It includes components for displaying the document name, sharing options, user profile picture, and additional functionality for various options.
+        - *Sidebar.jsx*:It displays links to various other Google Apps, allowing users to conveniently navigate between different Google applications from within the document editor.
+        - *Toolbar.jsx*: It contains the toolbar component that provides a collection of formatting options similar to those available in Google Docs. It includes functionalities like text formatting, font styles, alignment, and other tools to enhance the appearance and style of the document.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Tech Stack**
+This project is developed using React, and Chakra UI. React allows for efficient component-based development, while Chakra UI simplifies the styling and design process with its ready-to-use components and theming capabilities.
 
-### `npm run eject`
+- **Steps to Run it locally**
+ Clone the repository:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ```shell
+   git clone https://github.com/abdullahalam123/Docs-Replica-.git
+   ```
+   
+ Navigate to the project directory:
+   ```shell
+   cd .\Docs-Replica-\
+   ```
+ Make sure you have Node.js installed and run the command:
+   ```shell
+   npm install
+   ```
+ To start the developement server:
+   ```shell
+   npm start
+   ```
+5. The app will be available at: http://localhost:3000 on your browser.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
