@@ -34,23 +34,23 @@ Introducing a replica of Google Docs user interface. This creation was developed
 This project is developed using React, and Chakra UI. React allows for efficient component-based development, while Chakra UI simplifies the styling and design process with its ready-to-use components and theming capabilities.
 
 - **Steps to Run it locally**
- Clone the repository:
+ *Clone the repository*:
 
    ```shell
    git clone https://github.com/abdullahalam123/Docs-Replica-.git
    ```
    
- Navigate to the project directory:
+ *Navigate to the project directory*:
    ```shell
    cd .\Docs-Replica-\
    ```
- Make sure you have Node.js installed and run the command:
+ *Make sure Node.js is installed and run the command*:
    ```shell
    npm install
    ```
- To start the developement server:
+ *To start the developement server*:
    ```shell
    npm start
    ```
-5. The app will be available at: http://localhost:3000 on your browser.
+ *The app will be available at*: http://localhost:3000 on your browser.
 
